@@ -15,9 +15,17 @@ selector | class | id {
 
 # Typography
 
+fonts.google.com
+
 ```
 selector | class | id {
   font-family:;
   font-weight:bold|normal|300|800;
+  font-style:italic;
+  word-spacing: .05em;
+  letter-spacing: .03em;
+  text-transform: uppercase|lowercase;
+  text-align:;
+  line-height:;
 }
 ```
