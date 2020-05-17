@@ -58,3 +58,17 @@ e.g.
 
 
 ```
+
+---
+
+# Box Model
+to understand how elements are positioned and displayed on a website.
+
+* height
+* width
+* padding
+* border
+* margin
+* overflow
+
+<img src="images/diagram-boxmodel_Updated_1-01.svg">
