@@ -71,4 +71,72 @@ to understand how elements are positioned and displayed on a website.
 * margin
 * overflow
 
-<img src="images/diagram-boxmodel_Updated_1-01.svg">
+<center><img src="images/diagram-boxmodel_Updated_1-01.svg"></center>
+
+* width and height
+> specifies the width and height of the content area
+
+* padding
+> specifies amount of space between the content area and the border
+
+* border
+> specifies the thickness and style of the border surrounding the content area and padding
+
+* margin
+> specifies the amount of space between the border and the outside edge of the element
+
+## Height and width 
+element’s content has two dimensions: a height and a width
+```
+selector {
+  height:px;
+  width:px;
+}
+```
+## Border
+surround an elements 
+```
+selector {
+  border: <width>px <style> none|dotted|solid <color>;
+  border-radius: px | 100%; 
+}
+```
+## Padding
+space between contents and border 
+```
+selector {
+  padding:;
+  padding-top:;
+  padding-right:;
+  padding-bottom:;
+  padding-left:;
+  padding: top right bottom left;
+}
+```
+
+## Margin
+space directly outside the box , used to specify this space 
+```
+selector {
+  margin: px;
+  margin-top: ;
+  margin-bottom: ;
+  margin-right: ;
+  margin-left: ;
+}
+```
+* Margin
+0 sets the top and bottom margins to 0 pixels, auto value instructs the browser to adjust the left and right margins until the element is centered within its containing element.
+```
+div {
+  margin: 0 auto;
+}
+
+# In order to center an element, a width must be set for that element. Otherwise, the width of the div will be automatically set to the full width of its containing element
+
+div.headline {
+  width: 400px;
+  margin: 0 auto;
+}
+
+```
