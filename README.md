@@ -140,3 +140,65 @@ div.headline {
 }
 
 ```
+
+## Minimum and Maximum Height and Width
+properties that can limit how narrow or how wide an element’s box can be sized to.
+
+* min-width — this property ensures a minimum width of an element’s box.
+* max-width — this property ensures a maximum width of an element’s box.
+* min-height — this property ensures a minimum height for an element’s box.
+* max-height — this property ensures a maximum height of an element’s box
+
+```
+p {
+  min-width: 300px;
+  max-width: 600px;
+}
+
+p {
+  min-height: 150px;
+  max-height: 300px;
+}
+```
+## Overflow
+controls what happens to content that spills, or overflows, outside its box.
+* hidden - when set to this value, any content that overflows will be hidden from view.
+* scroll - when set to this value, a scrollbar will be added to the element’s box so that the rest of the content can be viewed by scrolling.
+* visible - when set to this value, the overflow content will be displayed outside of the containing element
+```
+p {
+  overflow: scroll; 
+}
+```
+## Resetting Default
+default stylesheets are known as user agent stylesheets.
+User agent stylesheets often have default CSS rules that set default values for padding and margin. This affects how the browser displays HTML elements, which can make it difficult for a developer to design or style a web page.
+
+Many developers choose to reset these default values so that they can truly work with a clean slate.
+```
+* {
+  margin: 0;
+  padding: 0;
+}
+```
+Note that both properties are both set to 0. When these properties are set to 0, they do not require a unit of measurement.
+
+## Visibility
+Elements can be hidden from view with the visibility property.
+
+The visibility property can be set to one of the following values:
+
+* hidden — hides an element.
+* visible — displays an element.
+```
+<ul>
+  <li>Explore</li>
+  <li>Connect</li>
+  <li class="future">Donate</li>
+<ul>
+
+.future {
+  visibility: hidden;
+}
+```
+Note: What’s the difference between display: none and visibility: hidden? An element with display: none will be completely removed from the web page. An element with visibility: hidden, however, will not be visible on the web page, but the space reserved for it will.
