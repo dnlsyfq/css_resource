@@ -202,3 +202,19 @@ The visibility property can be set to one of the following values:
 }
 ```
 Note: What’s the difference between display: none and visibility: hidden? An element with display: none will be completely removed from the web page. An element with visibility: hidden, however, will not be visible on the web page, but the space reserved for it will.
+
+## New Box Model
+targets all elements on the web page and sets their box model to the border-box model.
+```
+* {
+  box-sizing: border-box;
+}
+```
+You probably didn’t see a difference in the web page to the right - that’s ok! The new box model simply makes sure that the dimensions of elements remains the same regardless of border width and padding.
+
+
+In the default box model, box dimensions are affected by border thickness and padding.
+The box-sizing property controls the box model used by the browser.
+The default value of the box-sizing property is content-box.
+The value for the new box model is border-box.
+The border-box model is not affected by border thickness or padding.
