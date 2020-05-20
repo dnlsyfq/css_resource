@@ -274,3 +274,58 @@ often used for navigation bars on a web page
   left: 50px;
 }
 ```
+## Z-Index
+z-index property controls how far “back” or how far “forward” an element should appear on the web page when elements overlap. This can be thought of the depth of elements, with deeper elements appearing behind shallower elements.
+```
+# We changed position to relative, because the z-index property does not work on static elements. The z-index of 2 moves the .box-top element forward, because it is greater than the .box-bottom z-index, 1
+
+.box-top {
+  background-color: Aquamarine;
+  position: relative;
+  z-index: 2;
+}
+
+.box-bottom {
+  background-color: DeepSkyBlue;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  z-index: 1;
+}
+```
+## Inline Display
+three values for the display property: inline, block, and inline-block
+```
+<div class="rectangle">
+  <p>I’m a rectangle!</p>
+</div>
+<div class="rectangle">
+  <p>So am I!</p>
+</div>
+<div class="rectangle">
+  <p>Me three!</p>
+</div>
+
+.rectangle {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+}
+```
+
+## Float 
+to specify the exact position of an element using offset properties. If you’re simply interested in moving an element as far left or as far right 
+
+```
+.boxes {
+  width: 120px;
+  height: 70px;
+}
+
+.box-bottom {
+  background-color: DeepSkyBlue;
+  float: right;
+}
+```
+
+
