@@ -349,4 +349,113 @@ div.special {
   clear: left;
 }
 ```
+---
 
+# Responsive Design
+## Em
+One unit of measurement you can use in CSS to create relatively-sized content is the em, written as em .
+the em represents the size of the base font being used. For example, if the base font of a browser is 16 pixels (which is normally the default size of text in a browser), then
+> 1 em is equal to 16 pixels. 2 ems would equal 32 pixels, and so on.
+```
+.splash-section {
+  font-size: 18px;
+}
+
+.splash-section h1 {
+  font-size: 1.5em;
+}
+```
+## rem
+Rem stands for root em. It acts similar to em, but instead of checking parent elements to size font, it checks the root element.
+Most browsers set the font size of <html> to 16 pixels, so by default rem measurements will be compared to that value
+  
+```
+# In the example above, the font size of the root element, <html>, is set to 20 pixels. All subsequent rem measurements will now be compared to that value and the size of h1 elements in the example will be 40 pixels.
+
+html {
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+```
+
+## Percentages: Height & Width
+To size non-text HTML elements relative to their parent elements on the page you can use percentages.
+
+Percentages are often used to size box-model values, like width and height, padding, border, and margins. They can also be used to set positioning properties (top, bottom, left, right).
+
+```
+# When percentages are used, elements are sized relative to the dimensions of their parent element (also known as a container)
+
+.main {
+  height: 300px;
+  width: 500px;
+}
+
+.main .subsection {
+  height: 50%;
+  width: 50%;
+}
+```
+
+## Percentages: Padding & Margin
+Percentages can also be used to set the padding and margin of elements.
+
+When height and width are set using percentages, you learned that the dimensions of child elements are calculated based on the dimensions of the parent element.
+
+When percentages are used to set padding and margin, however, they are calculated based only on the width of the parent element.
+```
+.images {
+  margin-bottom:20%;
+}
+```
+
+## Width: Minimum & Maximum
+limit how wide an element. When a browser window is narrowed or widened, text can become either very compressed or very spread out, making it difficult to read. These two properties ensure that content is legible by limiting the minimum and maximum widths.
+
+* min-width — ensures a minimum width for an element.
+* max-width — ensures a maximum width for an element.
+```
+p {
+  min-width: 300px;
+  max-width: 600px;
+}
+```
+## Height: Minimum & Maximum
+limit the minimum and maximum height of an element.
+
+* min-height — ensures a minimum height for an element’s box.
+* max-height — ensures a maximum height for an element’s box.
+
+```
+p {
+  min-height: 150px;
+  max-height: 300px;
+}
+```
+## Scaling Images and Videos
+ make sure that it is scaled proportionally so that users can correctly view it
+```
+.container {
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+```
+## Scaling Background Images
+```
+body {
+  background-image: url('#');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+```
