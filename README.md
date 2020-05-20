@@ -218,3 +218,59 @@ The box-sizing property controls the box model used by the browser.
 The default value of the box-sizing property is content-box.
 The value for the new box model is border-box.
 The border-box model is not affected by border thickness or padding.
+---
+# Display and Positioning
+
+Flow of HTML
+
+A browser will render the elements of an HTML document that has no CSS from left to right, top to bottom, in the same order as they exist in the document. This is called the flow of elements in HTML.
+
+In addition to the properties that it provides to style HTML elements, CSS includes properties that change how a browser positions elements. These properties specify where an element is located on a page, if the element can share lines with other elements, and other related attributes.
+
+## Position
+Block-level elements like these boxes create a block the full width of their parent elements, and they prevent other elements from appearing in the same horizontal space. 
+
+The default position of an element can be changed by setting its position property. 
+```
+<div class="boxes"></div>
+<div class="boxes"></div>
+
+.boxes {
+  width: 120px;
+  height: 70px;
+  position: 
+}
+```
+
+* Position: Relative
+ to modify the default position of an element is by setting its position property to relative
+ ```
+ .box-bottom {
+  background-color: DeepSkyBlue;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+ ```
+* Position: Absolute
+When an element’s position is set to absolute all other elements on the page will ignore the element and act like it is not present on the page. The element will be positioned relative to its closest positioned parent element.
+```
+.box-bottom {
+  background-color: DeepSkyBlue;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+```
+* Position: fixed
+fix an element to a specific position on the page (regardless of user scrolling) by setting its position to fixed.
+often used for navigation bars on a web page
+```
+.box-bottom {
+  background-color: DeepSkyBlue;
+  position: fixed;
+  top: 20px;
+  left: 50px;
+}
+```
