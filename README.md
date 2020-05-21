@@ -503,5 +503,19 @@ To target by resolution, we can use the min-resolution and max-resolution media 
 }
 ```
 
+## And Operator
+and operator can be used to require multiple media features.
 
+## Comma Separated List
+If only one of multiple media features in a media query must be met, media features can be separated in a comma separated list.
+
+if we needed to apply a style when only one of the below is true:
+
+* The screen is more than 480 pixels wide
+* The screen is in landscape mode
+```
+@media only screen and (min-width: 480px), (orientation: landscape) {
+    /* CSS ruleset */
+}
+```
 
