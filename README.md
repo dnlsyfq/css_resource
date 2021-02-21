@@ -8,8 +8,9 @@ selector | class | id {
   color: 'black';
   color: #000000;
   color: rgb(0,0,0);
-  color: hsl(0,%,%); // hue saturation lightness 
-  color: hsla(34, 100%, 50%, 0.1); //a , opacity
+  color: hsl(0,%,%); // hue saturation lightness // The first number represents the degree of the hue, and can be between 0 and 360. The second and third numbers are percentages representing saturation and lightness respectively // Red is 0 degrees, Green is 120 degrees, Blue is 240 degrees, and then back to Red at 360
+  color: hsla(34, 100%, 50%, 0.1); //The first three values work the same as hsl. The fourth value (which we have not seen before) is the alpha(opacity) // Alpha can only be used with HSL and RGB colors
+  background-color: black;
 }
 ```
 
