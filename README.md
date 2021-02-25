@@ -20,7 +20,7 @@ fonts.google.com
 
 ```
 selector | class | id {
-  font-family:;
+  font-family: Garamond | "Courier New";
   font-weight:bold|normal|300|800;
   font-style:italic;
   word-spacing: .05em;
@@ -58,6 +58,43 @@ e.g.
 }
 
 
+```
+
+400 is the default font-weight of most text.
+700 signifies a bold font-weight.
+300 signifies a light font-weight.
+
+```
+header {
+  font-weight: 800;
+}
+ 
+footer {
+  font-weight: 200;
+}
+```
+
+```
+font-style: italic | normal;
+```
+### word spacing
+
+ The default amount of space between words is usually 0.25em and can be set with the value normal. If you provide a value for word-spacing that’s not normal, then the value you provide is added to the default spacing. Therefore, since the word-spacing is set to 0.3em, your <h1> elements get a total of 0.55em word spacing when rendered.
+  
+  
+```
+h1 {
+  word-spacing: 0.3em;
+}
+```
+
+### letter spacing 
+
+
+```
+h1 {
+  letter-spacing: 0.3em;
+}
 ```
 
 ---
