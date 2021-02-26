@@ -97,6 +97,85 @@ h1 {
 }
 ```
 
+### text transformation
+
+```
+h1 {
+  text-transform: uppercase;
+}
+```
+
+### text alignment
+
+```
+h1 {
+  text-align: right|center|left;
+}
+```
+
+### line height
+
+```
+p {
+  line-height: 1.4;
+}
+```
+
+* serif
+> fonts that have extra details on the ends of each letter. Examples include fonts like Times New Roman or Georgi
+
+* sans serif
+> fonts that do not have extra details on the ends of each letter. 
+
+
+```
+h1 {
+  font-family: "Garamond", "Times", serif;
+}
+```
+* fonts.google.com
+
+## linking fonts 
+
+```
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+</head>
+```
+
+```
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display" rel="stylesheet">
+</head>
+```
+
+Multiple linked fonts, along with weights and styles. Here Open Sans has font weights of 400, 700, and 700i, while Playfair Display has font weights of 400, 700, and 900i
+
+```
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,900" rel="stylesheet">
+</head>
+```
+* import font
+
+to import fonts directly into stylesheets with the @font-face property.
+
+@font-face{
+  font-family:;
+  font-style:;
+  font-weight:;
+  src:local('Space Mono'), local('SpaceMono-Regular'), url(https:// )('woff2');
+}
+
+```
+@font-face {
+  font-family: "Roboto";
+  src: url(fonts/Roboto.woff2) format('woff2'),
+       url(fonts/Roboto.woff) format('woff'),
+       url(fonts/Roboto.tff) format('truetype');
+}
+```
+
 ---
 
 # Box Model
