@@ -1,3 +1,7 @@
+# Padding & Margin
+
+padding property adds space inside the element. The margin property adds space around the element. Each of these two properties has top, left, bottom and right sub-properties.
+
 # Color 
 
 * color - this property styles an element’s foreground color.
