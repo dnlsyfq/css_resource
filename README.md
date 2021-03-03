@@ -218,7 +218,7 @@ selector {
 surround an elements 
 ```
 selector {
-  border: <width>px <style> none|dotted|solid <color>;
+  border: <width>px <style none|dotted|solid>  <color>;
   border-radius: px | 100%; 
 }
 ```
@@ -232,6 +232,7 @@ selector {
   padding-bottom:;
   padding-left:;
   padding: top right bottom left;
+  padding: top&bottom left|right;
 }
 ```
 
