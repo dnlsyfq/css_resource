@@ -1,6 +1,12 @@
+# style css
+
+* selector / element tags
+* class name
+
 # Padding & Margin
 
-padding property adds space inside the element. The margin property adds space around the element. Each of these two properties has top, left, bottom and right sub-properties.
+* padding property adds space inside the element. 
+* The margin property adds space around the element. Each of these two properties has top, left, bottom and right sub-properties.
 
 # Color 
 
@@ -8,7 +14,7 @@ padding property adds space inside the element. The margin property adds space a
 * background-color - this property styles an element’s background color.
 
 ```
-selector | class | id {
+selector | .classname | id {
   color: 'black';
   color: #000000;
   color: rgb(0,0,0);
@@ -23,7 +29,7 @@ selector | class | id {
 fonts.google.com
 
 ```
-selector | class | id {
+selector | .className | id {
   font-family: Garamond | "Courier New";
   font-weight:bold|normal|300|800;
   font-style:italic;
