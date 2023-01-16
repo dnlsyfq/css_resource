@@ -1,3 +1,10 @@
+# Link css to html
+
+1. Inline
+2. Style tags
+3. External 
+
+
 # style css
 
 * selector / element tags
