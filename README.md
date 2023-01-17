@@ -1,14 +1,103 @@
 # Link css to html
 
 1. Inline
-2. Style tags
-3. External 
+```
+<h1 style="font-size:12px; "></h1>
+```
 
+2. Style tags
+```
+<head>
+  <style>
+    p {
+      color: red;
+      font-size: 20px;
+    }
+  </style>
+</head>
+```
+
+
+3. External 
+```
+<link rel="stylesheet" type="text/css" href="style.css" />
+```
+
+### linking a CSS file to another CSS file
+```
+// at the top of your main CSS file
+
+@import “./layout”;
+@import “./images”;
+@import “./blog-cards”;
+
+```
+
+### Specificity
+order of selectors from least to most weight assigned
+
+```
+Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
+Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
+ID selectors (e.g., #example).
+
+```
+
+### Display and Positioning: Z-index
+When elements overlap, they are ordered on the z-axis (i.e., which element covers another). The z-index CSS property can be used to specify the z-order of these overlapping elements. Overlapping elements with a larger z-index cover those with a smaller one.
+
+ In these instances we need a way to determine which element should be displayed on top. Without explicitly using z-index the last element written to the DOM (the last element you wrote in your code) will appear on top of all the others, and so on up the chain of your elements.
+```
+ we wanted to display the first element on top we could use z-index, by giving each of the elements a numeric value for z-index and making sure that the value for element one is higher
+
+```
+
+## absolute vs relative
+
+### absolute
+Absolute measurements are set values regardless of anything having to do with your program or the browser
+```
+px
+in
+mm
+cm
+```
+### Relative
+If however, you wanted to set a CSS property value based on some dynamic value, the width of a browser window for example, there are also relative units of measurement that can be used to define CSS properties.
+```
+% - percentage of something, such as screen width
+em - A unit equivalent to the current font size - if 12px font, 2em would be 24px
+vw - units of viewport width (essentially the browser’s rendering space). Each unit is 1/100th of width
+vh - the same as above but for viewport height
+```
+
+The em unit is very useful for defining sizes relative to some base font. For example, if you set the font-size of body to 16px, you could then set other element’s font-size value relative to that 16px
+```
+// In this example, one would have font bigger than 16px, and two would have font smaller than 16px.
+
+body {
+ font-size: 16px;
+}
+
+#one {
+  font-size: 1.5em
+}
+
+#two {
+  font-size: 0.5em
+}
+```
 
 # style css
 
 * selector / element tags
 * class name
+
+# typography
+```
+
+```
+
 
 # Padding & Margin
 
