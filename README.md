@@ -1,7 +1,7 @@
 # CSS
 
-1 element with same id
-multiple element with same class
+* 1 element with same id
+* multiple element with same class
 
 ```
 selector {
