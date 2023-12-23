@@ -1,3 +1,53 @@
+# CSS
+
+1 element with same id
+multiple element with same class
+
+```
+selector {
+  property1: value1;
+}
+```
+
+* tag selector
+```
+img {
+  ...
+}
+```
+
+* class selector
+```
+<p class="withborder">...</p>
+
+.withborder {
+  ...
+}
+```
+
+
+* id selector
+```
+<h1 id="page-title">...</h1>
+
+
+#page-title{
+  ...
+}
+
+```
+
+
+* pseudo selector
+```
+<button>OK</button>
+
+button:hover {
+  ...
+}
+
+```
+
 # Link css to html
 
 1. Inline
