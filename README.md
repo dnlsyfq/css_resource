@@ -25,6 +25,17 @@ img {
 }
 ```
 
+* span
+CSS to a part of a text by putting it in a <span> tag
+```
+<span> Hello </span>
+
+span {
+  color:;
+}
+```
+
+
 
 * id selector
 ```
