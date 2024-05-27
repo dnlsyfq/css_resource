@@ -804,3 +804,8 @@ if we needed to apply a style when only one of the below is true:
 }
 ```
 
+### Text styling 
+```
+text-decoration: underline |overline|line-through|;
+text-align:
+```
