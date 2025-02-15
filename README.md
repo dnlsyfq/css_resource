@@ -156,7 +156,9 @@ body {
 
 # typography
 ```
-
+{
+  font-family: serif | "Avenir Next" | Georgia | sans-serif | "Lucida Grande"
+}
 ```
 
 
